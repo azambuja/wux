@@ -53,8 +53,7 @@ extern int opterr;		/*  error manipulation flag  	*/
 
 unsigned long int net_resolve(const char *);
 unsigned long init_tcp_client(const char *, const unsigned short, int *);
-int logon(int sockfd, char *username, char *password, char *directory, 
-														short int mkd);
+int logon(int sockfd, char *username, char *password, char *directory, short int mkd);
 void shell (int sock);
 int attack(int sockfd, char *directory, char *cmd, short int mkd);
 
